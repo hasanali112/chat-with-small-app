@@ -131,7 +131,7 @@
         }
         .chat-input {
           border-radius: 0;
-          padding: 15px;
+          padding: 10px;
         }
         .chat-messages {
           padding: 15px;
@@ -140,12 +140,20 @@
           max-width: 85%;
         }
         .input-group {
-          flex-direction: column;
-          gap: 10px;
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+        }
+        .input-group input {
+          flex: 1;
+          min-width: 0;
+          padding: 10px 15px;
         }
         .btn-send {
           margin-left: 0;
-          width: 100%;
+          padding: 10px 15px;
+          flex-shrink: 0;
+          white-space: nowrap;
         }
       }
     </style>
